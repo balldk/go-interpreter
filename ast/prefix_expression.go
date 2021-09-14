@@ -6,9 +6,9 @@ import (
 )
 
 type PrefixExpression struct {
-	Token token.Token // The prefix token, e.g. !
+	Token    token.Token // The prefix token, e.g. !
 	Operator string
-	Right Expression
+	Right    Expression
 }
 
 func (pe PrefixExpression) expressionNode() {}
